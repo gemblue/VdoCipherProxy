@@ -12,9 +12,9 @@ require __DIR__ . '/../src/VdoCipherInterface.php';
 require __DIR__ . '/../src/VdoCipher.php';
 require __DIR__ . '/../src/Request.php';
 
-use VdoCipher\VdoCipher;
+use Gemblue\VdoCipherProxy\VdoCipher;
 
-$VdoCipher = new VdoCipher(YOUR_CIPHER_URL, YOUR_CIPHER_API_SECRET);
+$VdoCipher = new VdoCipher('https://dev.vdocipher.com/api/videos/811f682218b796674bc94ed73ccb317e/otp', 'jr3FhKGosg7HJjawUljZ64aumNe4MQ59vsEX1mPIuFpFETALrG2AYxf6tYWuKIna');
 $result = $VdoCipher->getOtpPlaybackInfo();
 
 print_r($result);
