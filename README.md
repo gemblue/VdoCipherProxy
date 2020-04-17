@@ -3,7 +3,12 @@
 Wrapper/Proxy for Vdo Cipher API.
 
 ### Requirement
+
 PHP Curl Extension
+
+```
+sudo apt install php-curl
+```
 
 ### How to Use
 
