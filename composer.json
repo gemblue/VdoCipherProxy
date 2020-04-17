@@ -1,5 +1,5 @@
 {
-	"name": "gemblue/VdoCipherProxy",
+	"name": "gemblue/vdo-cipher-proxy",
 	"description": "Proxy/Wrapper class for Vdo Cipher Video Platform",
 	"type": "library",
 	"license": "MIT",
