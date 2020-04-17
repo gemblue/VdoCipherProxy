@@ -10,7 +10,7 @@ PHP Curl Extension
 Grab it from composer
 
 ```
-composer require gemblue/VdoCipherProxy
+composer require gemblue/vdo-cipher-proxy
 ```
 
 Make new object and enjoy!
