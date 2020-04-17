@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Sample codes, to use this LAME Class.
+ * For production codes, use PSR4 autoloading!
+ */
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+require __DIR__ . '/../src/VdoCipherInterface.php';
+require __DIR__ . '/../src/VdoCipher.php';
+require __DIR__ . '/../src/Request.php';
+
+use VdoCipher\VdoCipher;
+
+$VdoCipher = new VdoCipher(YOUR_CIPHER_URL, YOUR_CIPHER_API_SECRET);
+$result = $VdoCipher->getOtpPlaybackInfo();
+
+print_r($result);
