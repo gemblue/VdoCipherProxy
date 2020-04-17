@@ -1,0 +1,24 @@
+{
+	"name": "gemblue/VdoCipherProxy",
+	"description": "Proxy/Wrapper class for Vdo Cipher Video Platform",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Ahmad Oriza Sahputra",
+			"email": "ahmadoriza@gmail.com"
+		}
+	],
+	"require": {
+		"php": "^7.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"VdoCipherProxy\\": "src/"
+		}
+	},
+	"require-dev": {
+		"doctrine/coding-standard": "^7.0",
+		"phpstan/phpstan": "^0.12.18"
+	}
+}
