@@ -7,8 +7,11 @@ PHP Curl Extension
 
 ### How to Use
 
-Run composer
-`composer require gemblue/VdoCipherProxy`
+Grab it from composer
+
+```
+composer require gemblue/VdoCipherProxy
+```
 
 Make new object and enjoy!
 
