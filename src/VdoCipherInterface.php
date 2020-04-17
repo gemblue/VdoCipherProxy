@@ -7,7 +7,7 @@
  * @author Gemblue
  */
 
-namespace VdoCipher;
+namespace Gemblue\VdoCipherProxy;
 
 interface VdoCipherInterface {
     public function setEndpoint(string $endpoint);

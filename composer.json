@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"VdoCipherProxy\\": "src/"
+			"Gemblue\\VdoCipherProxy\\": "src/"
 		}
 	},
 	"require-dev": {

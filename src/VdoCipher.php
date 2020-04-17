@@ -7,7 +7,7 @@
  * @author Gemblue
  */
 
-namespace VdoCipher;
+namespace Gemblue\VdoCipherProxy;
 
 class VdoCipher implements VdoCipherInterface  {
     

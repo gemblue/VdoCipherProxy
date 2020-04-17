@@ -1,13 +1,13 @@
 <?php
 
-namespace VdoCipher;
-
 /**
  * Simple Curl Wrapper, consuming as Object.
  * 
  * @package Curl
  * @author Gemblue
  */
+
+namespace Gemblue\VdoCipherProxy;
 
 class Request  {
     
