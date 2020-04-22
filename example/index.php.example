@@ -15,6 +15,17 @@ require __DIR__ . '/../src/Request.php';
 use Gemblue\VdoCipherProxy\VdoCipher;
 
 $VdoCipher = new VdoCipher('https://dev.vdocipher.com/api/videos/811f682218b796674bc94ed73ccb317e/otp', 'jr3FhKGosg7HJjawUljZ64aumNe4MQ59vsEX1mPIuFpFETALrG2AYxf6tYWuKIna');
-$result = $VdoCipher->getOtpPlaybackInfo();
+$result = $VdoCipher->getOtpPlaybackInfo([
+    "whitelisthref" => "codepolitan.com",
+    "ttl" => 3000,
+    "annotate" => [
+        "type" => "rtext",
+        "text" => "Codepolitan", 
+        "alpha" => "0.60",
+        "color" => "0xFF0000",
+        "size" => "15",
+        "interval" => "5000"
+    ]
+]);
 
 print_r($result);

@@ -64,12 +64,11 @@ class Request  {
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_POST, 1);
         
-        if (!empty($fields)) {
-            $fields = json_encode(http_build_query($this->fields));
-
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
+        if (!empty($this->fields)) {
+            $payload = json_encode($this->fields);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
         }
-
+        
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->header);
