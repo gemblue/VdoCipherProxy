@@ -53,12 +53,13 @@ class VdoCipher implements VdoCipherInterface  {
      * 
      * @return array
      */
-    public function getOtpPlaybackInfo() {
+    public function getOtpPlaybackInfo(array $options) {
         
         // Build Request from Internal Library.
         $request = new Request;
         
         $result = $request->setURL($this->endpoint)
+                          ->setFields($options)
                           ->setHeader('Content-length: 0')
                           ->setHeader('Content-Type: application/json')
                           ->setHeader('Authorization: Apisecret ' . $this->apiSecret)

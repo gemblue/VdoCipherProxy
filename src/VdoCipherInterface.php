@@ -12,5 +12,5 @@ namespace Gemblue\VdoCipherProxy;
 interface VdoCipherInterface {
     public function setEndpoint(string $endpoint);
     public function setApiSecret(string $apiSecret);
-    public function getOtpPlaybackInfo();
+    public function getOtpPlaybackInfo(array $options);
 }
