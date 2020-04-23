@@ -14,7 +14,7 @@ require __DIR__ . '/../src/Request.php';
 
 use Gemblue\VdoCipherProxy\VdoCipher;
 
-$VdoCipher = new VdoCipher('https://dev.vdocipher.com/api/videos/811f682218b796674bc94ed73ccb317e/otp', 'jr3FhKGosg7HJjawUljZ64aumNe4MQ59vsEX1mPIuFpFETALrG2AYxf6tYWuKIna');
+$VdoCipher = new VdoCipher({LINK}, {token});
 $result = $VdoCipher->getOtpPlaybackInfo([
     "whitelisthref" => "codepolitan.com",
     "ttl" => 3000,
