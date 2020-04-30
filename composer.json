@@ -16,9 +16,5 @@
 		"psr-4": {
 			"Gemblue\\VdoCipherProxy\\": "src/"
 		}
-	},
-	"require-dev": {
-		"doctrine/coding-standard": "^7.0",
-		"phpstan/phpstan": "^0.12.18"
 	}
 }
